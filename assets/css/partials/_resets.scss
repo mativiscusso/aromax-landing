@@ -1,0 +1,84 @@
+$gris : #e2e2e0;
+$azul: #5972a2;
+$naranja: #d5783d;
+$tipografia: 'Montserrat';
+
+@font-face {
+  src: url('../font/MONTSERRAT-REGULAR.TTF');
+  font-family: 'Montserrat';
+}
+
+@font-face {
+  src: url('../font/MONTSERRAT-BOLD.TTF');
+  font-family: 'Montserrat bold';
+}
+
+@font-face {
+  src: url('../font/MONTSERRAT-SEMIBOLD.TTF');
+  font-family: 'Montserrat semibold';
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5rem;
+  }
+  body {
+    font-family: $tipografia;
+    font-weight: 400;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  #mainIndex {
+    background-color: white;
+  }
+  input:focus {
+    outline: 0;
+  }
+  textarea:focus {
+    outline: 0;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+  .w-50 {
+    width: 50% !important;
+  }
+  .w-75 {
+    width: 75% !important;
+  }
+  .w-100 {
+    width: 100% !important;
+  }
+  .pt-4 {
+    padding: 2rem 0 0 0 !important;
+  }
+  .py-4 {
+    padding: 2rem 0 !important;
+  }
+  .py-5 {
+    padding: 3rem 0 !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .text-left {
+    text-align: left !important;
+  }
+  .text-dark {
+    color: #000 !important;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  

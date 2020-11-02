@@ -1,0 +1,17 @@
+.productos {
+    text-align: center;
+    padding: 2rem 0rem;
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .producto {
+            width: 42%;
+            padding: 2%;
+            text-align: center;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

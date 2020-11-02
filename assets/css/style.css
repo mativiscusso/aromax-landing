@@ -1,0 +1,256 @@
+@font-face {
+  src: url("../font/MONTSERRAT-REGULAR.TTF");
+  font-family: 'Montserrat';
+}
+
+@font-face {
+  src: url("../font/MONTSERRAT-BOLD.TTF");
+  font-family: 'Montserrat bold';
+}
+
+@font-face {
+  src: url("../font/MONTSERRAT-SEMIBOLD.TTF");
+  font-family: 'Montserrat semibold';
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#mainIndex {
+  background-color: white;
+}
+
+input:focus {
+  outline: 0;
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.w-75 {
+  width: 75% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.pt-4 {
+  padding: 2rem 0 0 0 !important;
+}
+
+.py-4 {
+  padding: 2rem 0 !important;
+}
+
+.py-5 {
+  padding: 3rem 0 !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-dark {
+  color: #000 !important;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.catalogo {
+  background-image: url("../img/CATALOGO.png");
+  background-size: cover;
+  padding: 2rem 0;
+}
+
+.catalogo .texto-catalogo {
+  background-color: rgba(89, 114, 162, 0.7);
+  color: #fff;
+  padding: 1rem;
+}
+
+.catalogo .imagen-catalogo {
+  width: 50%;
+  margin: auto;
+}
+
+.catalogo .imagen-catalogo img {
+  padding: 2rem 0 0 0;
+  width: 100%;
+}
+
+footer {
+  background-color: #5972a2;
+  color: #ffffff;
+  padding: 2rem 1rem;
+}
+
+footer p {
+  font-size: 1.4rem;
+  font-family: 'Montserrat bold';
+}
+
+.franquicias {
+  background-color: #5972a2;
+  margin: auto;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  color: #fff;
+}
+
+header {
+  background-image: url("../img/banner1.png");
+  background-size: cover;
+  background-position: left;
+  height: 140vh;
+  padding: 1rem 1rem;
+}
+
+header .logo {
+  width: 40%;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header .texto-header {
+  width: 100%;
+  padding: 5rem 0;
+  font-size: 1.3rem;
+}
+
+header .texto-header h1 {
+  font-family: 'Montserrat bold';
+  line-height: 1;
+}
+
+header .form-contact form input, header textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #5972a2;
+  border-radius: 1rem;
+}
+
+header .form-contact {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.info-logos {
+  background-color: #e2e2e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem .5rem;
+}
+
+.info-logos .logo {
+  width: 33%;
+  text-align: center;
+}
+
+.info-logos .logo img {
+  width: 33%;
+}
+
+.productos {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.productos .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.productos .wrapper .producto {
+  width: 42%;
+  padding: 2%;
+  text-align: center;
+}
+
+.productos .wrapper .producto img {
+  width: 100%;
+}
+
+.contactar {
+  background-color: #d5783d;
+  color: #5972a2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 1rem;
+  font-family: 'Montserrat bold';
+}
+
+.contactar p {
+  width: 60%;
+}
+
+.contactar button {
+  width: 30%;
+}
+/*# sourceMappingURL=style.css.map */

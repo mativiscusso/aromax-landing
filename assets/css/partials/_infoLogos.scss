@@ -1,0 +1,13 @@
+.info-logos {
+    background-color: $gris;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem .5rem;
+    .logo {
+        width: 33%;
+        text-align: center;
+        img {
+            width: 33%;
+        }
+    }
+}

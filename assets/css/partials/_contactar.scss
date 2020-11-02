@@ -1,0 +1,14 @@
+.contactar {
+    background-color: $naranja;
+    color: $azul;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    font-family: 'Montserrat bold';
+    p {
+        width: 60%;
+    }
+    button {
+        width: 30%;
+    }
+}
