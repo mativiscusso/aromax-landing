@@ -2,13 +2,17 @@
     background-color: $gris;
     display: flex;
     justify-content: space-between;
-    padding: 2rem .5rem;
+    padding: 2rem 0;
     font-weight: bold;
     .logo {
         width: 33%;
         text-align: center;
         img {
             width: 33%;
+        }
+        p {
+            font-size: .8rem;
+            line-height: 1.3;
         }
     }
 }
