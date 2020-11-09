@@ -1,11 +1,11 @@
 .catalogo {
-    background-image: url("../img/CATALOGO.png");
+    background-image: url("../img/catalogo.jpg");
     background-size: cover;
     padding: 2rem 0;
     .texto-catalogo {
         background-color: rgba($azul, $alpha: 0.7);
         color: #fff;
-        padding: 1rem;;
+        padding: 1rem;
     }
     .imagen-catalogo {
         width: 50%;
@@ -15,4 +15,48 @@
             width: 100%;
         }
     }
+    button {
+        background-color: #fff;
+        color: $azul;
+        padding: 0.2rem;
+        border-radius: 0.5rem;
+        border: 2px solid $naranja;
+        width: 100%;
+        font-family: $tipografia;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .catalogo {
+        .texto-catalogo {
+            padding: 4rem 2rem;
+            font-size: 1.4rem;
+            button {
+                margin: 2rem 0 0 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .catalogo {
+        position: relative;
+        .texto-catalogo {
+            width: 100%;
+            h3,h4 {
+                width: 50%;
+            }
+            button {
+                width: 20%;
+            }
+        }
+        .imagen-catalogo {
+            position: absolute;
+            right: 50px;
+            top: -40px;
+            width: 20%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
 }

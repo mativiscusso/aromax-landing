@@ -1,16 +1,16 @@
 @font-face {
   src: url("../font/MONTSERRAT-REGULAR.TTF");
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 @font-face {
   src: url("../font/MONTSERRAT-BOLD.TTF");
-  font-family: 'Montserrat bold';
+  font-family: "Montserrat bold";
 }
 
 @font-face {
   src: url("../font/MONTSERRAT-SEMIBOLD.TTF");
-  font-family: 'Montserrat semibold';
+  font-family: "Montserrat semibold";
 }
 
 * {
@@ -33,10 +33,6 @@ ul {
 a {
   color: black;
   text-decoration: none;
-}
-
-#mainIndex {
-  background-color: white;
 }
 
 input:focus {
@@ -105,8 +101,30 @@ label {
           justify-content: center;
 }
 
+button {
+  text-transform: uppercase;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.btn {
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.btn:hover {
+  background-color: #5972a2;
+  color: #fff;
+  cursor: pointer;
+}
+
 .catalogo {
-  background-image: url("../img/CATALOGO.png");
+  background-image: url("../img/catalogo.jpg");
   background-size: cover;
   padding: 2rem 0;
 }
@@ -127,6 +145,47 @@ label {
   width: 100%;
 }
 
+.catalogo button {
+  background-color: #fff;
+  color: #5972a2;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  border: 2px solid #d5783d;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+@media only screen and (min-width: 768px) {
+  .catalogo .texto-catalogo {
+    padding: 4rem 2rem;
+    font-size: 1.4rem;
+  }
+  .catalogo .texto-catalogo button {
+    margin: 2rem 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .catalogo {
+    position: relative;
+  }
+  .catalogo .texto-catalogo {
+    width: 100%;
+  }
+  .catalogo .texto-catalogo h3, .catalogo .texto-catalogo h4 {
+    width: 50%;
+  }
+  .catalogo .texto-catalogo button {
+    width: 20%;
+  }
+  .catalogo .imagen-catalogo {
+    position: absolute;
+    right: 50px;
+    top: -40px;
+    width: 20%;
+  }
+}
+
 footer {
   background-color: #5972a2;
   color: #ffffff;
@@ -138,6 +197,23 @@ footer p {
   font-family: 'Montserrat bold';
 }
 
+footer .left .redes img {
+  width: 35px;
+  padding: .5rem;
+}
+
+@media only screen and (min-width: 992px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem 2rem;
+  }
+  footer .right {
+    margin-left: 40%;
+  }
+}
+
 .franquicias {
   background-color: #5972a2;
   margin: auto;
@@ -146,11 +222,47 @@ footer p {
   color: #fff;
 }
 
+.franquicias h3 {
+  padding: 0 0 .5rem 0;
+  font-weight: bold;
+}
+
+.franquicias button {
+  background-color: transparent;
+  color: #fff;
+  padding: .2rem;
+  border-radius: 0.5rem;
+  border: 2px solid #fff;
+  width: 100%;
+  font-family: "Montserrat";
+}
+
+@media only screen and (min-width: 992px) {
+  .franquicias {
+    background-image: url("../img/franquicias.jpg");
+    background-size: contain;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-color: #e2e2e0;
+    color: #5972a2;
+    width: 80%;
+    margin: 3rem auto;
+  }
+  .franquicias .texto-franquicias {
+    width: 50%;
+  }
+  .franquicias button {
+    width: 30%;
+    color: #5972a2;
+    border: 2px solid #5972a2;
+  }
+}
+
 header {
   background-image: url("../img/banner1.png");
   background-size: cover;
   background-position: left;
-  height: 140vh;
+  height: 120vh;
   padding: 1rem 1rem;
 }
 
@@ -165,7 +277,6 @@ header .logo img {
 header .texto-header {
   width: 100%;
   padding: 5rem 0;
-  font-size: 1.3rem;
 }
 
 header .texto-header h1 {
@@ -188,6 +299,50 @@ header .form-contact {
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
+header .form-contact button {
+  background-color: #5972a2;
+  color: #fff;
+  padding: .2rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  margin: .5rem 0 0 0;
+  font-family: "Montserrat";
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  header .texto-header h1 {
+    font-size: 2.9rem;
+    margin: 0 6rem;
+  }
+  header .form-contact {
+    margin: 6rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    height: 140vh;
+  }
+  header .logo {
+    width: 15%;
+  }
+  header .wrapper {
+    padding: 3rem 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .wrapper .texto-header {
+    width: 60%;
+    margin: 0;
+  }
+  header .wrapper .form-contact {
+    margin: 0 2rem 0 0;
+    width: 40%;
+  }
+}
+
 .info-logos {
   background-color: #e2e2e0;
   display: -webkit-box;
@@ -197,6 +352,7 @@ header .form-contact {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2rem .5rem;
+  font-weight: bold;
 }
 
 .info-logos .logo {
@@ -206,6 +362,12 @@ header .form-contact {
 
 .info-logos .logo img {
   width: 33%;
+}
+
+@media only screen and (min-width: 992px) {
+  .info-logos .logo img {
+    width: 15%;
+  }
 }
 
 .productos {
@@ -233,6 +395,39 @@ header .form-contact {
   width: 100%;
 }
 
+.productos .wrapper .producto p {
+  font-size: .7rem;
+}
+
+.productos button {
+  background-color: transparent;
+  color: #5972a2;
+  padding: .2rem;
+  border-radius: 0.5rem;
+  border: 2px solid #5972a2;
+  width: 50%;
+  margin: auto;
+  margin-top: .5rem;
+  font-family: "Montserrat";
+}
+
+@media only screen and (min-width: 992px) {
+  .productos h3 {
+    font-size: 1.5rem;
+  }
+  .productos button {
+    margin-top: 3rem;
+    width: 20%;
+  }
+  .productos .wrapper .producto {
+    width: 29%;
+    padding: 2%;
+  }
+  .productos .wrapper .producto p {
+    font-size: 1rem;
+  }
+}
+
 .contactar {
   background-color: #d5783d;
   color: #5972a2;
@@ -244,6 +439,9 @@ header .form-contact {
           justify-content: space-between;
   padding: 2rem 1rem;
   font-family: 'Montserrat bold';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contactar p {
@@ -252,5 +450,21 @@ header .form-contact {
 
 .contactar button {
   width: 30%;
+  background-color: #fff;
+  color: #5972a2;
+  padding: 0 .5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #5972a2;
+  font-family: "Montserrat";
+  height: 28px;
+}
+
+@media only screen and (min-width: 992px) {
+  .contactar p {
+    font-size: 1.3rem;
+  }
+  .contactar button {
+    width: 200px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@ header {
     background-image: url("../img/banner1.png");
     background-size: cover;
     background-position: left;
-    height: 140vh;
+    height: 120vh;
     padding: 1rem 1rem;
     .logo {
         width: 40%;
@@ -13,7 +13,6 @@ header {
     .texto-header {
         width: 100%;
         padding: 5rem 0;
-        font-size: 1.3rem;
         h1 {
             font-family: 'Montserrat bold';
             line-height: 1;
@@ -30,11 +29,52 @@ header {
         padding: 2rem 1rem;
         border-radius: 0.5rem;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        button {
+            background-color: $azul;
+            color: #fff;
+            padding: .2rem;
+            border-radius: 0.5rem;
+            width: 100%;
+            margin: .5rem 0 0 0;
+            font-family: $tipografia;
+            font-size: 1rem;
+        }
     }
 }
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 768px) {
+    header {
+        .texto-header {
+            h1 {
+                font-size: 2.9rem;
+                margin: 0 6rem;
+            }
+        }
+        .form-contact {
+            margin: 6rem;
+        }
+    }
+}
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    header {
+        height: 140vh;
+        .logo {
+            width: 15%;
+        }
+        .wrapper {
+            padding: 3rem 0 0 0;
+            display: flex;
+            .texto-header {
+                width: 60%;
+                margin: 0;
+            }
+            .form-contact {
+                margin: 0 2rem 0 0;
+                width: 40%;
+            }
+        }
+    }
+}
 
 @media only screen and (min-width: 1300px) {}
 

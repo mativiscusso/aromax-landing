@@ -13,96 +13,107 @@
         <div class="logo">
             <img src="./assets/img/logo-aromax.png" alt="logo aromax">
         </div>
-        <div class="texto-header">
-            <h1>Dejanos tus datos, nosotros nos comunicamos!</h1>
-        </div>
-        <div class="form-contact">
-            <form action="/" method="post">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-            <label for="telefono">telefono</label>
-            <input type="text" name="telefono" id="telefono">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <label for="localidad">Localidad</label>
-            <input type="text" name="localidad" id="localidad">
-            <label for="mensaje">mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="20" rows="5"></textarea>
-            <button type="submit">enviar</button>
-        </form>
+        <div class="wrapper">
+            <div class="texto-header">
+                <h1>Dejanos tus datos, nosotros nos comunicamos!</h1>
+            </div>
+            <div class="form-contact">
+                <form action="/" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" id="telefono">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="localidad">Localidad</label>
+                    <input type="text" name="localidad" id="localidad">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="20" rows="5"></textarea>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
         </div>
     </header>
     <main>
         <section class="info-logos">
             <div class="logo">
                 <img src="./assets/img/factory.svg" alt="fabricantes">
-                <p>somos fabricantes</p>
+                <p class="text-uppercase">somos fabricantes</p>
             </div>
             <div class="logo">
                 <img src="./assets/img/factura.svg" alt="ventas">
-                <p>venta mayorista y minorista</p>
+                <p class="text-uppercase">venta mayorista y minorista</p>
             </div>
             <div class="logo">
                 <img src="./assets/img/entrega.svg" alt="entrega">
-                <p>Envíos a todo el país</p>
+                <p class="text-uppercase">Envíos a todo el país</p>
             </div>
         </section>
         <section class="franquicias">
-            <h2>Franquicias</h2>
-            <h3>¿Quiere vender nuestros productos?</h3>
-            <p>Usted podrá armar su cartera de clientes en su trabajo, barrio, escuelas, clubes, o dentro de su círculo
-                social.</p>
-            <button>Mas información</button>
+            <div class="texto-franquicias">
+                <h2>Franquicias</h2><br>
+                <h3>¿Quiere vender nuestros productos?</h3>
+                <p>Usted podrá armar su cartera de clientes en su trabajo, barrio, escuelas, clubes, o dentro de su
+                    círculo
+                    social.</p><br>
+            </div>
+            <button class="btn">Mas información</button>
         </section>
         <section class="productos">
+            <h3>PRODUCTOS</h3>
             <div class="wrapper">
                 <div class="producto">
                     <img src="./assets/img/EQUIPO ELECTRICO.png" alt="producto">
-                    <p>equipo eléctrico aromatizador</p>
+                    <p class="text-uppercase">equipo eléctrico aromatizador</p>
                 </div>
                 <div class="producto">
                     <img src="./assets/img/ESCENCIAS.png" alt="producto">
-                    <p>aceite escencial p/ equipo eléctrico</p>
+                    <p class="text-uppercase">aceite escencial p/ equipo eléctrico</p>
                 </div>
                 <div class="producto">
                     <img src="./assets/img/AEROSOL.png" alt="producto">
-                    <p>aerosoles</p>
+                    <p class="text-uppercase">aerosoles</p>
                 </div>
                 <div class="producto">
                     <img src="./assets/img/TEXTIL.png" alt="producto">
-                    <p>fragancias textiles</p>
+                    <p class="text-uppercase">fragancias textiles</p>
                 </div>
                 <div class="producto">
                     <img src="./assets/img/BAMBOO.png" alt="producto">
-                    <p>bamboo</p>
+                    <p class="text-uppercase">bamboo</p>
                 </div>
                 <div class="producto">
                     <img src="./assets/img/HIGIENE.png" alt="producto">
-                    <p>higiene</p>
+                    <p class="text-uppercase">higiene</p>
                 </div>
             </div>
-            <button>ir a la tienda</button>
+            <button class="btn">ir a la tienda</button>
         </section>
         <section class="catalogo">
             <div class="texto-catalogo">
-            <h3>Conocé toda nuestra línea de productos</h3>
-            <h4>Nuevo Catálogo 2020 </h4>
-            <a href="http://" target="_blank" rel="noopener noreferrer"><button>descargar</button></a>
-        </div>
-        <div class="imagen-catalogo">
-            <img src="./assets/img/catalogo-tapa.png" alt="catalogo">
-        </div>
+                <h3>Conocé toda nuestra línea de productos</h3><br>
+                <h4>Nuevo Catálogo 2020 </h4>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><button class="btn">descargar</button></a>
+            </div>
+            <div class="imagen-catalogo">
+                <img src="./assets/img/catalogo-tapa.png" alt="catalogo">
+            </div>
         </section>
         <section class="contactar">
             <p>Para mas información contactenos a través de nuestro formulario</p>
-            <button>contactar</button>
+            <button class="btn">contactar</button>
         </section>
         <footer>
             <div class="left">
                 <p>Aromax</p>
-                <div class="redes"></div>
+                <div class="redes">
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./assets/img/facebook.svg"
+                        alt="facebook"></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><img src="./assets/img/instagram.svg"
+                        alt="instagram"></a>
+                    </div>
             </div>
-            <div class="rigth">
+            <div class="right">
                 <ul>
                     <li>0800-444-9779</li>
                     <li>0341 4636164 / 4639779</li>

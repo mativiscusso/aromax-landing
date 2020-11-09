@@ -12,6 +12,44 @@
             img {
                 width: 100%;
             }
+            p {
+                font-size: .7rem;
+            }
+        }
+    }
+    button {
+        background-color: transparent;
+        color: $azul;
+        padding: .2rem;
+        border-radius: 0.5rem;
+        border: 2px solid $azul;
+        width: 50%;
+        margin: auto;
+        margin-top: .5rem;
+        font-family: $tipografia;
+    }
+}
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {
+    .productos {
+        h3 {
+            font-size: 1.5rem;
+        }
+        button {
+            margin-top: 3rem;
+            width: 20%;
+        }
+        .wrapper {
+            .producto {
+                width: 29%;
+                padding: 2%;
+                p {
+                    font-size: 1rem;
+                }
+            }
         }
     }
 }
+
+@media only screen and (min-width: 1300px) {}

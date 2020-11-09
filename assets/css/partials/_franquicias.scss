@@ -4,4 +4,42 @@
     width: 100%;
     padding: 2rem 1.5rem;
     color: #fff;
+    h3 {
+        padding: 0 0 .5rem 0;
+        font-weight: bold;
+    }
+    button {
+        background-color: transparent;
+        color: #fff;
+        padding: .2rem;
+        border-radius: 0.5rem;
+        border: 2px solid #fff;
+        width: 100%;
+        font-family: $tipografia;
+    }
 }
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {
+    .franquicias {
+        background-image: url('../img/franquicias.jpg');
+        background-size: contain;
+        background-position-x: right;
+        background-repeat: no-repeat;
+        background-color: $gris;
+        color: $azul;
+        width: 80%;
+        margin: 3rem auto;
+        .texto-franquicias {
+            width: 50%;
+        }
+        button {
+            width: 30%;
+            color: $azul;
+            border: 2px solid $azul;
+    
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {}

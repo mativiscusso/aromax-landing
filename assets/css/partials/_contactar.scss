@@ -5,10 +5,32 @@
     justify-content: space-between;
     padding: 2rem 1rem;
     font-family: 'Montserrat bold';
+    align-items: center;
     p {
         width: 60%;
     }
     button {
         width: 30%;
+        background-color: #fff;
+        color: $azul;
+        padding: 0 .5rem;
+        border-radius: 0.5rem;
+        border: 2px solid $azul;
+        font-family: $tipografia;
+        height: 28px;
     }
 }
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {
+    .contactar {
+        p {
+            font-size: 1.3rem;
+        }
+        button {
+            width: 200px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {}
