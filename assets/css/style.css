@@ -136,13 +136,15 @@ button {
 }
 
 .catalogo .imagen-catalogo {
-  width: 50%;
-  margin: auto;
+  background-color: rgba(89, 114, 162, 0.7);
+  width: 100%;
+  text-align: center;
 }
 
 .catalogo .imagen-catalogo img {
-  padding: 2rem 0 0 0;
-  width: 100%;
+  padding: 2rem 0 2rem 0;
+  width: 50%;
+  margin: auto;
 }
 
 .catalogo button {
@@ -179,10 +181,15 @@ button {
     width: 20%;
   }
   .catalogo .imagen-catalogo {
+    background-color: transparent;
     position: absolute;
-    right: 50px;
-    top: -40px;
-    width: 20%;
+    right: 100px;
+    top: 45px;
+    width: 170px;
+  }
+  .catalogo .imagen-catalogo img {
+    padding: 0;
+    width: 100%;
   }
 }
 
@@ -223,18 +230,23 @@ footer .left .redes img {
 }
 
 .franquicias h3 {
-  padding: 0 0 .5rem 0;
+  padding: 0 0 0.5rem 0;
   font-weight: bold;
 }
 
 .franquicias button {
   background-color: transparent;
   color: #fff;
-  padding: .2rem;
+  padding: 0.2rem;
   border-radius: 0.5rem;
   border: 2px solid #fff;
   width: 100%;
   font-family: "Montserrat";
+}
+
+.franquicias .img-franquicias img {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -256,18 +268,21 @@ footer .left .redes img {
     color: #5972a2;
     border: 2px solid #5972a2;
   }
+  .franquicias .img-franquicias {
+    display: none;
+  }
 }
 
 header {
-  background-image: url("../img/banner1.png");
+  background-image: url("../img/header-mobile.jpg");
   background-size: cover;
-  background-position: left;
+  background-position: center;
   height: 140vh;
   padding: 1rem 1rem;
 }
 
 header .logo {
-  width: 40%;
+  width: 30%;
 }
 
 header .logo img {
@@ -276,12 +291,21 @@ header .logo img {
 
 header .texto-header {
   width: 100%;
-  padding: 5rem 0;
+  padding: 2rem 0 5rem 0;
 }
 
 header .texto-header h1 {
   font-family: 'Montserrat bold';
   line-height: 1;
+  color: #5972a2;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+header .texto-header p {
+  font-family: 'Montserrat bold';
+  color: #5972a2;
+  margin-bottom: 65%;
+  width: 70%;
 }
 
 header .form-contact form input, header textarea {
@@ -322,20 +346,30 @@ header .form-contact button {
 
 @media only screen and (min-width: 992px) {
   header {
+    background-image: url("../img/banner1.png");
+    background-position: left;
     height: 140vh;
   }
   header .logo {
-    width: 15%;
+    width: 13%;
   }
   header .wrapper {
-    padding: 3rem 0 0 0;
+    padding: 1rem 0 0 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   header .wrapper .texto-header {
-    width: 60%;
+    width: 55%;
     margin: 0;
+    padding-right: 2rem;
+  }
+  header .wrapper .texto-header h1 {
+    margin: 0;
+  }
+  header .wrapper .texto-header p {
+    margin: 1rem 0;
+    width: 100%;
   }
   header .wrapper .form-contact {
     margin: 0 2rem 0 0;
@@ -365,13 +399,16 @@ header .form-contact button {
 }
 
 .info-logos .logo p {
-  font-size: .8rem;
+  font-size: .5rem;
   line-height: 1.3;
 }
 
 @media only screen and (min-width: 992px) {
   .info-logos .logo img {
     width: 15%;
+  }
+  .info-logos .logo p {
+    font-size: .9rem;
   }
 }
 
@@ -450,6 +487,7 @@ header .form-contact button {
 }
 
 .contactar p {
+  color: #fff;
   width: 60%;
 }
 

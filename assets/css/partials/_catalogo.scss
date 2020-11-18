@@ -8,11 +8,13 @@
         padding: 1rem;
     }
     .imagen-catalogo {
-        width: 50%;
-        margin: auto;
+        background-color: rgba($azul, $alpha: 0.7);
+        width: 100%;
+        text-align: center;
         img {
-            padding: 2rem 0 0 0;
-            width: 100%;
+            padding: 2rem 0 2rem 0;
+            width: 50%;
+            margin: auto;
         }
     }
     button {
@@ -50,10 +52,15 @@
             }
         }
         .imagen-catalogo {
+            background-color: transparent;
             position: absolute;
-            right: 50px;
-            top: -40px;
-            width: 20%;
+            right: 100px;
+            top: 45px;
+            width: 170px;
+            img {
+                padding: 0;
+                width: 100%;
+            }
         }
     }
 }

@@ -5,24 +5,31 @@
     padding: 3rem 1.5rem;
     color: #fff;
     h3 {
-        padding: 0 0 .5rem 0;
+        padding: 0 0 0.5rem 0;
         font-weight: bold;
     }
     button {
         background-color: transparent;
         color: #fff;
-        padding: .2rem;
+        padding: 0.2rem;
         border-radius: 0.5rem;
         border: 2px solid #fff;
         width: 100%;
         font-family: $tipografia;
     }
+    .img-franquicias {
+        img {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
 }
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 @media only screen and (min-width: 992px) {
     .franquicias {
-        background-image: url('../img/franquicias.jpg');
+        background-image: url("../img/franquicias.jpg");
         background-size: contain;
         background-position-x: right;
         background-repeat: no-repeat;
@@ -37,9 +44,12 @@
             width: 30%;
             color: $azul;
             border: 2px solid $azul;
-    
+        }
+        .img-franquicias {
+            display: none;
         }
     }
 }
 
-@media only screen and (min-width: 1300px) {}
+@media only screen and (min-width: 1300px) {
+}

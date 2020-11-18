@@ -1,21 +1,29 @@
 header {
-    background-image: url("../img/banner1.png");
+    background-image: url("../img/header-mobile.jpg");
     background-size: cover;
-    background-position: left;
+    background-position: center;
     height: 140vh;
     padding: 1rem 1rem;
     .logo {
-        width: 40%;
+        width: 30%;
         img {
             width: 100%;
         }
     }
     .texto-header {
         width: 100%;
-        padding: 5rem 0;
+        padding: 2rem 0 5rem 0;
         h1 {
             font-family: 'Montserrat bold';
             line-height: 1;
+            color: $azul;
+            text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+        }
+        p {
+            font-family: 'Montserrat bold';
+            color: $azul;
+            margin-bottom: 65%;
+            width: 70%;
         }
     }
     .form-contact form input, textarea{
@@ -57,16 +65,26 @@ header {
 
 @media only screen and (min-width: 992px) {
     header {
+        background-image: url("../img/banner1.png");
+        background-position: left;
         height: 140vh;
         .logo {
-            width: 15%;
+            width: 13%;
         }
         .wrapper {
-            padding: 3rem 0 0 0;
+            padding: 1rem 0 0 3rem;
             display: flex;
             .texto-header {
-                width: 60%;
+                width: 55%;
                 margin: 0;
+                padding-right: 2rem;
+                h1 {
+                    margin: 0
+                }
+                p {
+                    margin: 1rem 0;
+                    width: 100%;
+                }
             }
             .form-contact {
                 margin: 0 2rem 0 0;
