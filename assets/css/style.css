@@ -377,6 +377,20 @@ header .form-contact button {
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  header .wrapper .texto-header {
+    padding: 5rem 0rem 5rem 0;
+    width: 55%;
+  }
+  header .wrapper .texto-header h1 {
+    font-size: 3.4rem;
+    padding-right: 6rem;
+  }
+  header .wrapper .texto-header p {
+    font-size: 1.4rem;
+  }
+}
+
 .info-logos {
   background-color: #e2e2e0;
   display: -webkit-box;

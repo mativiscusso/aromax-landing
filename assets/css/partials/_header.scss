@@ -94,5 +94,21 @@ header {
     }
 }
 
-@media only screen and (min-width: 1300px) {}
+@media only screen and (min-width: 1400px) {
+    header {
+        .wrapper {
+            .texto-header {
+                padding: 5rem 0rem 5rem 0;
+                width: 55%;
+                h1 {
+                    font-size: 3.4rem;
+                    padding-right: 6rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
 
