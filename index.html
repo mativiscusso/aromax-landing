@@ -6,9 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>AROMAX</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5WB542S');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WB542S" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="logo">
             <img src="./assets/img/logo-aromax.png" alt="logo aromax">
@@ -19,7 +33,7 @@
                 <h1>Dejanos tus datos, nosotros nos comunicamos!</h1>
             </div>
             <div class="form-contact">
-                <form action="/" method="post">
+                <form id="formulario-contacto" method="post" action="https://formspree.io/f/mzbkazey">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre">
                     <label for="telefono">Telefono</label>
@@ -30,7 +44,8 @@
                     <input type="text" name="localidad" id="localidad">
                     <label for="mensaje">Mensaje</label>
                     <textarea name="mensaje" id="mensaje" cols="20" rows="5"></textarea>
-                    <button type="submit">ENVIAR</button>
+                    <button type="submit" id="my-form-button">ENVIAR</button>
+                    <p id="my-form-status"></p>
                 </form>
             </div>
         </div>
@@ -61,7 +76,9 @@
                     círculo
                     social.</p><br>
             </div>
-            <button class="btn">Mas información</button>
+            <a href="https://aromax.com.ar/franquicias/" target="_blank" rel="noopener noreferrer">
+                <button class="btn">Mas información</button>
+            </a>
         </section>
         <section class="productos">
             <h3>PRODUCTOS</h3>
@@ -91,13 +108,16 @@
                     <p class="text-uppercase">higiene</p>
                 </div>
             </div>
-            <button class="btn">ir a la tienda</button>
+            <a href="https://aromax.com.ar/shop/" target="_blank" rel="noopener noreferrer">
+                <button class="btn">Ver mas</button>
+            </a>
         </section>
         <section class="catalogo">
             <div class="texto-catalogo">
                 <h3>Conocé toda nuestra línea de productos</h3><br>
-                <h4>Nuevo Catálogo 2020 </h4>
-                <a href="/assets/img/catalogo de productos.pdf" target="_blank" rel="noopener noreferrer"><button class="btn">descargar</button></a>
+                <a href="/assets/img/catalogo de productos.pdf" target="_blank" rel="noopener noreferrer">
+                    <button class="btn">descargar catálogo</button>
+                </a>
             </div>
             <div class="imagen-catalogo">
                 <img src="./assets/img/catalogo-tapa.png" alt="catalogo">
@@ -105,7 +125,9 @@
         </section>
         <section class="contactar">
             <p>Para mas información contactenos a través de nuestro formulario</p>
-            <button class="btn">contactar</button>
+            <a href="#formulario-contacto">
+                <button class="btn">contactar</button>
+            </a>
         </section>
         <footer>
             <div class="left">
@@ -124,6 +146,12 @@
             </div>
         </footer>
     </main>
+    <div id="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5493415480250" target="_blank">
+            <img src="./assets/img/whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
+    <script src="./assets/js/form.js"></script>
 </body>
 
 </html>

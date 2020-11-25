@@ -313,6 +313,8 @@ header .form-contact form input, header textarea {
   border: 0;
   border-bottom: 1px solid #5972a2;
   border-radius: 1rem;
+  padding: 0 0.7rem;
+  font-family: "Montserrat";
 }
 
 header .form-contact {
@@ -415,6 +417,7 @@ header .form-contact button {
 .info-logos .logo p {
   font-size: .5rem;
   line-height: 1.3;
+  color: #5972a2;
 }
 
 @media only screen and (min-width: 992px) {
@@ -522,6 +525,47 @@ header .form-contact button {
   }
   .contactar button {
     width: 200px;
+  }
+}
+
+#whatsapp {
+  position: fixed;
+  top: 85%;
+  right: 75%;
+}
+
+#whatsapp i {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#whatsapp i:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+#whatsapp i:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+@media (min-width: 998px) {
+  #whatsapp {
+    position: fixed;
+    top: 85%;
+    right: 90%;
+  }
+  #whatsapp img {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  #whatsapp:hover {
+    -webkit-filter: brightness(1.3);
+            filter: brightness(1.3);
+  }
+  #whatsapp :active {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 /*# sourceMappingURL=style.css.map */
