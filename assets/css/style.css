@@ -509,7 +509,7 @@ header .form-contact button {
 }
 
 .contactar button {
-  width: 30%;
+  width: 100%;
   background-color: #fff;
   color: #5972a2;
   padding: 0 .5rem;
