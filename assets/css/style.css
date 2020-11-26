@@ -21,6 +21,10 @@
   line-height: 1.5rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat";
   font-weight: 400;

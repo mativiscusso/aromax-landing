@@ -23,6 +23,9 @@ $tipografia: "Montserrat";
   padding: 0;
   line-height: 1.5rem;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $tipografia;
   font-weight: 400;
