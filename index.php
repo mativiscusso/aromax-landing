@@ -1,3 +1,27 @@
+<?php
+
+if(isset($_POST["nombre"]) && isset($_POST["email"]) && isset($_POST["mensaje"]) ){
+    ini_set ('display_errors', 1);
+    error_reporting (E_ALL);
+    $to = "administracion@aromax.com.ar";
+    $subject = "Mensaje Enviado desde AromaxSA";
+    $contenido = "Nombre: ".$_POST["nombre"]."\n";
+    $contenido .= "Email: ".$_POST["email"]."\n\n";
+    $contenido .= "Telefono: ".$_POST["telefono"]."\n\n";
+    $contenido .= "Localidad: ".$_POST["localidad"]."\n\n";
+    $contenido .= "Mensaje: ".$_POST["mensaje"]."\n\n";
+    $header = "From: administracion@aromax.com.ar\nReply-To:".$_POST["email"]."\n";
+    $header .= "Mime-Version: 1.0\n";
+    $header .= "Content-Type: text/plain";
+    if(mail($to, $subject, $contenido ,$header)){
+        echo  '<script language="javascript">
+                    window.onload = function() {
+                        swal("Mensaje Enviado", "success");
+                    }
+                </script>';
+    }
+    }               
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +31,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
     <meta name="description" content="Landing page Aromax">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>AROMAX</title>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
@@ -36,7 +61,7 @@
                 <h1>Dejanos tus datos, nosotros nos comunicamos!</h1>
             </div>
             <div class="form-contact" id="contact">
-                <form id="formulario-contacto" method="post" action="https://formspree.io/f/mzbkazey">
+                <form method="post" action="http://aromaxsa.com.ar">
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre">
                     <label for="telefono">Telefono</label>
@@ -47,7 +72,7 @@
                     <input type="text" name="localidad" id="localidad">
                     <label for="mensaje">Mensaje</label>
                     <textarea name="mensaje" id="mensaje" cols="20" rows="5"></textarea>
-                    <button type="submit" id="my-form-button">ENVIAR</button>
+                    <button type="submit" >ENVIAR</button>
                     <p id="my-form-status"></p>
                 </form>
             </div>
